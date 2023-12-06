@@ -1,1 +1,1 @@
-export * from "./use-current-second";
+export { AnimatedSpan } from "./AnimatedSpan";

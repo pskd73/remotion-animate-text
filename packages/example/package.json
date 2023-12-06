@@ -19,7 +19,8 @@
     "@remotion/cli": "^4.0.46",
     "@remotion/eslint-config": "^4.0.46",
     "@types/react": "^18.2.26",
-    "@types/react-dom": "^18.2.11"
+    "@types/react-dom": "^18.2.11",
+    "zod": "^3.22.3"
   },
   "private": true
 }

@@ -14,7 +14,11 @@
     "remotion": "*"
   },
   "devDependencies": {
-    "remotion": "^4.0.46"
+    "remotion": "^4.0.46",
+    "@types/react": "18.0.26",
+		"@types/react-dom": "18.0.11",
+    "react": "18.2.0",
+		"react-dom": "18.2.0"
   },
   "publishConfig": {
     "access": "public"
