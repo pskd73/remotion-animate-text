@@ -1,0 +1,26 @@
+{
+  "name": "library-starter",
+  "description": "Turborepo template that makes it easy to develop a library in the Remotion ecosystem with the best practices applied out of the box",
+  "author": {
+    "name": "Mohit Yadav",
+    "email": "yo@mohitya.dev",
+    "url": "https://mohitya.dev/",
+    "github": "https://github.com/Just-Moh-it/"
+  },
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "dev": "turbo run dev",
+    "clean": "rm -rf packages/**/dist && rm -rf packages/**/.turbo && rm -rf packages/**/node_modules && rm -rf .turbo"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "turbo": "1.10.15",
+    "tsup": "7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "packageManager": "pnpm@8.6.10"
+}
