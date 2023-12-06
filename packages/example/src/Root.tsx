@@ -18,7 +18,8 @@ const Root = () => {
           y: [0, 0],
           scale: [1, 1],
           rotate: [0, 0],
-          windowSize: 20
+          windowSize: 20,
+          word: false,
         }}
         schema={inputSchema}
       />

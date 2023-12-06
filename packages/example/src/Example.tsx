@@ -3,6 +3,7 @@ import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 
 export const inputSchema = z.object({
+  word: z.boolean().default(false),
   duration: z.number().min(1),
   opacity: z.array(z.number().step(0.1).min(0).max(1)).optional(),
   x: z.array(z.number().step(0.1)).optional(),
@@ -13,6 +14,7 @@ export const inputSchema = z.object({
 });
 
 export default function Example({
+  word,
   duration,
   opacity,
   x,
@@ -33,7 +35,15 @@ export default function Example({
       <h1 style={{ fontSize: 200, fontFamily: "sans-serif", color: "black" }}>
         <AnimatedSpan
           duration={duration}
-          animation={{ opacity, x, y, scale, rotate, windowSize }}
+          animation={{
+            delimiter: word ? " " : "",
+            opacity,
+            x,
+            y,
+            scale,
+            rotate,
+            windowSize,
+          }}
         >
           Hello world!
         </AnimatedSpan>
