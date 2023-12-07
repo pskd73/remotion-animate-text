@@ -2,7 +2,7 @@
 
 It is a [Remotion](https://remotion.dev/) package to animate the text. It animates the text either by `charecters` or by `words` on top of multiple `css` properties. It follows same pattern of `interpolate` function by native Remotion.
 
-![Demo](./ezgif-4-d59156ac58.gif)
+![Demo](https://github.com/pskd73/remotion-animate-text/blob/main/packages/library/ezgif-4-d59156ac58.gif)
 
 ### Usage
 
