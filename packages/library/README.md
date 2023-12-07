@@ -1,4 +1,4 @@
-## `remotion-animate-text`
+## remotion-animate-text
 
 It is a [Remotion](https://remotion.dev/) package to animate the text. It animates the text either by `charecters` or by `words` on top of multiple `css` properties. It follows same pattern of `interpolate` function by native Remotion.
 
