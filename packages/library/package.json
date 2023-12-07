@@ -1,10 +1,14 @@
 {
   "name": "remotion-animate-text",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A remotion package to animate text",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pskd73/remotion-animate-text"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
