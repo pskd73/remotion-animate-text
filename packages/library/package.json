@@ -13,6 +13,11 @@
   "peerDependencies": {
     "remotion": "*"
   },
+  "keywords": [
+    "remotion",
+    "animation",
+    "text animation"
+  ],
   "devDependencies": {
     "remotion": "^4.0.46",
     "@types/react": "18.0.26",
