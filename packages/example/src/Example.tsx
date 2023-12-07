@@ -1,4 +1,4 @@
-import { AnimatedSpan } from "remotion-animate-text";
+import { AnimatedText } from "remotion-animate-text";
 import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 
@@ -32,8 +32,8 @@ export default function Example({
         justifyContent: "center",
       }}
     >
-      <h1 style={{ fontSize: 200, fontFamily: "sans-serif", color: "black" }}>
-        <AnimatedSpan
+      <h1 style={{ fontSize: 200, fontFamily: "sans-serif", color: "red" }}>
+        <AnimatedText
           duration={duration}
           animation={{
             delimiter: word ? " " : "",
@@ -46,7 +46,7 @@ export default function Example({
           }}
         >
           Hello world!
-        </AnimatedSpan>
+        </AnimatedText>
       </h1>
     </AbsoluteFill>
   );

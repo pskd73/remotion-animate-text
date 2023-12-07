@@ -1,15 +1,15 @@
-import { ComponentProps } from "react";
+import { PropsWithChildren } from "react";
 import { TextAnimation, applyTextAnimation } from "./animate-text";
 import { useCurrentFrame } from "remotion";
 
-export const AnimatedSpan = ({
+export const AnimatedText = ({
   children,
   animation,
   duration,
-}: ComponentProps<"span"> & {
+}: PropsWithChildren<{
   duration: number;
   animation: TextAnimation;
-}) => {
+}>) => {
   const frame = useCurrentFrame();
 
   return applyTextAnimation({

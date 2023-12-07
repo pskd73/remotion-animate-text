@@ -1,19 +1,34 @@
-## `my-library`
+## `remotion-animate-text`
 
-A React hook for use with [Remotion](https://remotion.dev/) that returns the current second.
+It is a [Remotion](https://remotion.dev/) package to animate the text. It animates the text either by `charecters` or by `words` on top of multiple `css` properties. It follows same pattern of `interpolate` function by native Remotion.
+
+![Demo](./ezgif-4-d59156ac58.gif)
 
 ### Usage
 
 ```tsx
-import { useCurrentSecond } from "my-library";
+import { AnimatedText } from "remotion-animate-text";
 import { AbsoluteFill } from "remotion";
 
 export const Example: React.FC = () => {
   const second = useCurrentSecond();
 
+  const animation = {
+    delimiter: "",
+    opacity: [0, 1],
+    x: [1, 0],
+    y: [1, 0],
+    scale: [0, 1],
+    rotate: [45, 0],
+    hideLoading: false,
+    refRange: [0, 100], // can be any length and all other properties should also be of same length
+  };
+
   return (
     <AbsoluteFill>
-      <h1>Second: {second}</h1>
+      <AnimatedText duration={60} animation={animation}>
+        Hello world
+      </AnimatedText>
     </AbsoluteFill>
   );
 };
