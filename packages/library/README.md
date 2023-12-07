@@ -4,6 +4,10 @@ It is a [Remotion](https://remotion.dev/) package to animate the text. It animat
 
 ![Demo](https://github.com/pskd73/remotion-animate-text/blob/main/packages/library/ezgif-4-d59156ac58.gif)
 
+### Install
+
+`npm i remotion-animate-text`
+
 ### Usage
 
 ```tsx
