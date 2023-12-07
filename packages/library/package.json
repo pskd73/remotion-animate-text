@@ -1,7 +1,7 @@
 {
-  "name": "my-library",
-  "version": "0.0.1",
-  "description": "Example react hook for use in remotion to get current second.",
+  "name": "remotion-animate-text",
+  "version": "1.0.0",
+  "description": "A remotion package to animate text",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

@@ -10,7 +10,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remotion": "^4.0.46",
-    "my-library": "workspace:*"
+    "remotion-animate-text": "workspace:*"
   },
   "peerDependencies": {
     "remotion": "*"

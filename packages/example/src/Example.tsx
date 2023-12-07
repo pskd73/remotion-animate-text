@@ -1,4 +1,4 @@
-import { AnimatedSpan } from "my-library";
+import { AnimatedSpan } from "remotion-animate-text";
 import { AbsoluteFill } from "remotion";
 import { z } from "zod";
 

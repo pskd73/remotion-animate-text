@@ -26,9 +26,6 @@ importers:
 
   packages/example:
     dependencies:
-      my-library:
-        specifier: workspace:*
-        version: link:../library
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -38,6 +35,9 @@ importers:
       remotion:
         specifier: ^4.0.46
         version: 4.0.46(react-dom@18.2.0)(react@18.2.0)
+      remotion-animate-text:
+        specifier: workspace:*
+        version: link:../library
     devDependencies:
       '@remotion/cli':
         specifier: ^4.0.46
