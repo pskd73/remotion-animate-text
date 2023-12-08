@@ -15,8 +15,6 @@ import { AnimatedText } from "remotion-animate-text";
 import { AbsoluteFill } from "remotion";
 
 export const Example: React.FC = () => {
-  const second = useCurrentSecond();
-
   const animation = {
     delimiter: "",
     opacity: [0, 1],
