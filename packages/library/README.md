@@ -24,6 +24,7 @@ export const Example: React.FC = () => {
     rotate: [45, 0],
     hideLoading: false,
     refRange: [0, 100], // can be any length and all other properties should also be of same length
+    durations: [40, 50] // using this you can control for how long each part should animate in frames
   };
 
   return (

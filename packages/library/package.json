@@ -1,6 +1,6 @@
 {
   "name": "remotion-animate-text",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A remotion package to animate text",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
