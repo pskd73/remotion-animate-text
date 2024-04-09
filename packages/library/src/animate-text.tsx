@@ -13,6 +13,7 @@ export type TextAnimation = {
   showOverflow?: boolean;
   refRange?: number[];
   durations?: number[];
+  blur?: number[];
 };
 
 type Part = {
@@ -149,6 +150,9 @@ export const applyTextAnimation = ({
     toStyle: ({ pct }) => {
       const transforms: string[] = [];
       const refRange = animation?.refRange || [0, 100];
+
+      let blur = 0;
+
       if (animation?.scale) {
         const scale = interpolate(pct, refRange, animation.scale, {
           extrapolateRight: "clamp",
@@ -173,6 +177,12 @@ export const applyTextAnimation = ({
         });
         transforms.push(`rotate(${rotate}deg)`);
       }
+      if (animation?.blur) {
+        blur = interpolate(pct, refRange, animation.blur, {
+          extrapolateRight: "clamp",
+        });
+      }
+
       return {
         opacity:
           animation?.opacity &&
@@ -181,6 +191,7 @@ export const applyTextAnimation = ({
           }),
         transform: transforms.length > 0 ? transforms.join(" ") : undefined,
         display: animation?.hideLoading && pct === 0 ? "none" : "inline-block",
+        filter: `blur(${blur}px)`,
       };
     },
   });

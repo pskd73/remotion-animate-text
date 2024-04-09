@@ -10,6 +10,7 @@ export const inputSchema = z.object({
   y: z.array(z.number().step(0.1)).optional(),
   scale: z.array(z.number().step(0.1).min(0).max(1)).optional(),
   rotate: z.array(z.number().step(0.1)).optional(),
+  blur: z.array(z.number().step(0.2)).optional(),
   windowSize: z.number().min(0).max(100),
 });
 
@@ -21,6 +22,7 @@ export default function Example({
   y,
   scale,
   rotate,
+  blur,
   windowSize,
 }: z.infer<typeof inputSchema>) {
   return (
@@ -42,6 +44,7 @@ export default function Example({
             y,
             scale,
             rotate,
+            blur,
             windowSize,
           }}
         >

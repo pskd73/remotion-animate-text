@@ -20,6 +20,7 @@ const Root = () => {
           rotate: [0, 0],
           windowSize: 20,
           word: false,
+          blur: [0, 0],
         }}
         schema={inputSchema}
       />
